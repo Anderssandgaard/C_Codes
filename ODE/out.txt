@@ -1,0 +1,16 @@
+---------------------------------------------------------------------
+ODE driver on Harmonic Differential Equation with storage of data points
+---------------------------------------------------------------------
+Number of Steps for Solving Harmonic Diff. Eqn. is = 122996
+
+
+Value of integral from 0 to 4PI of Harmonic Function using ODE (Should be zero) = -0.0006
+
+
+---------------------------------------------------------------------
+ODE driver on Logistic Differential Equation with storage of data points
+---------------------------------------------------------------------
+Number of Steps for Solving Logistic Diff. Eqn. is = 6322
+
+
+Value of integral from 0 to 4PI of Logistic Function using ODE (approx. 11.8732)) = 11.8736

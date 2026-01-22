@@ -1,0 +1,10 @@
+set term svg size 800,600 background rgb "white"
+set out  "Neural_Network_ODE.svg"
+set xlabel "x"
+set ylabel "y"
+set key right bottom font ",10"
+set title  "Neural Network for solving ODE "
+plot "out.txt" index 0 with lines title "Neural Logistic Function" \
+, 1/(1+exp(-x)) with lines title "Analytic Logistic Function"\
+, exp(-x*x*0.5) with lines title "Analytic Gaussian Function"\
+,"out.txt" index 1 with lines title "Neural Gaussian Function"

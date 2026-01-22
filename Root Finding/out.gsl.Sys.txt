@@ -1,0 +1,2 @@
+iter = 165 x =  0.000  9.106 f(x) =  5.924e-09  4.253e-12
+status = success

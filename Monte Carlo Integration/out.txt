@@ -1,0 +1,27 @@
+---------------------------------------------------------------------
+Test of Plain Monte Carlo Multi-Dimensional Integration
+---------------------------------------------------------------------
+
+Calculated Integral using Plain Monte Carlo 0f x*x+y*y+z*z from x,y,z=0 to x,y,z=1:
+
+ Result=1.0002
+Real Result= 1
+Estimated Error= 0.000163291
+Real Error= 0.000196624
+
+Calculated Integral using Plain Monte Carlo of function 1/(1-cosxcosycosx) from x,y,z=0 to x,y,z=PI:
+
+ Result=1.38766
+Real Result= 1.3932
+Estimated Error= 0.00221932
+Real Error: 0.00554272
+
+
+---------------------------------------------------------------------
+Adaptive integration of 2 variable function on the area {(x,y):a<x<b,c(x)<y<d(d)}:
+---------------------------------------------------------------------
+We integrate sin(x)sin(y) from {(x,y):0<x<1,x*x<y<exp(x)}:
+
+Result=0.555661
+Error=1.95268e-06
+Result from Wolfram Alpha=0.555661

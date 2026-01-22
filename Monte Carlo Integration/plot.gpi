@@ -1,0 +1,11 @@
+set term svg size 800,600 background rgb "white"
+set out  "Monte_carlo_error.svg"
+set xlabel "N(1)"
+set ylabel "Error(1)"
+set key right bottom font ",10"
+set title  "Error of Plain Monte Carlo Integration on Func. x*x+y*y+z*z"
+f(x)=b+(a/sqrt(x))
+b=0.1; a=10
+fit f(x) "datalog" via b,a
+F = sprintf("fit: error=%4.1f+(%3.0f/sqrt(N))",b,a)
+plot "datalog" using 1:2 with points  title "Data of Error vs. N",f(x) with lines title F \

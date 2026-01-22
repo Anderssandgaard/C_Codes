@@ -1,0 +1,23 @@
+set term pdf
+set out  "Least-Squares.pdf"
+set xlabel "x"
+set ylabel "y"
+set key right bottom font ",10"
+set title  "Least Squares Fit to c1*Log(x)+c2+c3*x for Data"
+plot "data.txt" with errorbars title "Data"\
+,"out.txt" index 1 using 1:2 with lines title "Least Squares Fit"\
+,"out.txt" index 1 using 1:3 with lines title "Least Squares Fit plus log(x)-delta" \
+,"out.txt" index 1 using 1:4 with lines title "Least Squares Fit minus log(x)-delta"\
+,"out.txt" index 2 using 1:3 with lines title "Least Squares Fit plus const-delta" \
+,"out.txt" index 2 using 1:4 with lines title "Least Squares Fit minus const-delta"\
+,"out.txt" index 3 using 1:3 with lines title "Least Squares Fit plus x-delta" \
+,"out.txt" index 3 using 1:4 with lines title "Least Squares Fit minus x-delta"
+set title  "Least Squares Fit to c1*Log(x)+c2+c3*x for Data Using SVD"
+plot "data.txt" with errorbars title "Data"\
+,"out.svd.txt" index 1 using 1:2 with lines title "Least Squares Fit"\
+,"out.svd.txt" index 1 using 1:3 with lines title "Least Squares Fit plus log(x)-delta" \
+,"out.svd.txt" index 1 using 1:4 with lines title "Least Squares Fit minus log(x)-delta"\
+,"out.svd.txt" index 2 using 1:3 with lines title "Least Squares Fit plus const-delta" \
+,"out.svd.txt" index 2 using 1:4 with lines title "Least Squares Fit minus const-delta"\
+,"out.svd.txt" index 3 using 1:3 with lines title "Least Squares Fit plus x-delta" \
+,"out.svd.txt" index 3 using 1:4 with lines title "Least Squares Fit minus x-delta"

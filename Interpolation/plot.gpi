@@ -1,0 +1,22 @@
+set term pdf
+set out  "plot.pdf"
+set xlabel "x"
+set ylabel "y"
+set grid
+set key right bottom
+set title  "Spline of Random Points"
+plot "out.txt" using 1:2 with lines title "Linear Spline"\
+,"out.txt" using 1:4 with lines title "Quad Spline"\
+,"out.txt" using 1:12 with lines title "Cubic Spline"\
+,"out.txt" using 1:7 with lines title "GSL Lin. Spline"\
+,"out.txt" using 1:9 with lines title "GSL Cubic. Spline"
+set title  "Ïntegration Spline of Random Points"
+plot "out.txt" using 1:3 with lines title "Linear Spline integ"\
+,"out.txt" using 1:5 with lines title "Quad Spline integ"\
+,"out.txt" using 1:13 with lines title "Cubic Spline integ"\
+,"out.txt" using 1:8 with lines title "GSL Lin. integ Spline"\
+,"out.txt" using 1:10 with lines title "GSL Cubic. integ Spline"
+set title  "Derivative Spline of Random Points"
+plot "out.txt" using 1:6 with lines title "Quad Spline deriv"\
+,"out.txt" using 1:14 with lines title "Cubic Spline deriv"\
+,"out.txt" using 1:11 with lines title "GSL Cubic. deriv Spline"

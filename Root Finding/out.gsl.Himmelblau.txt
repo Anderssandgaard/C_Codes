@@ -1,0 +1,2 @@
+iter =   7 x = -0.271 -0.923 f(x) =  2.438e-08 -4.442e-08
+status = success

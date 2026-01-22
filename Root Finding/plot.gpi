@@ -1,0 +1,7 @@
+set term pdf
+set out  "RosenBrock.pdf"
+set xlabel "x"
+set ylabel "y"
+set key right bottom font ",10"
+set title  "Root Finding RosenBrock"
+f(x,y)=(1-x)*(1-x)+100*(y-x*x)*(y-x*x)

@@ -1,0 +1,2 @@
+iter = 132 x = -2.331  5.442 f(x) = -3.001e-01  1.365e+00
+status = jacobian evaluations are not improving the solution

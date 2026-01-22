@@ -1,0 +1,10 @@
+set term svg size 800,600 background rgb "white"
+set out  "ODE.svg"
+set xlabel "x"
+set ylabel "y"
+set key right bottom font ",10"
+set title  "ODE for sin(x) and 1/(1+exp(-x))"
+plot "datalog" index 0 using 1:2 with lines  title "ODE RK23 Harmonic Diff. Eqn." \
+,"datalog" index 0 using 1:3 with lines  title "Theoretical Sine Function"\
+,"datalog" index 1 using 1:2 with lines  title "ODE RK23 Logistic Diff. Eqn." \
+,"datalog" index 1 using 1:3 with lines title "Theoretical Log. Func."

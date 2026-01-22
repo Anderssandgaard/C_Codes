@@ -1,0 +1,217 @@
+---------------------------------------------------------------------
+ROOT FINDING FOR VARIOUS FUNCTIONS 
+(SEE OUT.GSL.TXT FOR THE GSL GENERATED VALUES:
+GSL w.o. Jacobian for System of Eqn: 165 Steps
+GSL w.o. Jacobian for Rosenbrock' Function: 132 Steps
+GSL w.o. Jacobian for Himmelblau's Function: 7 Steps
+---------------------------------------------------------------------
+
+---------------------------------------------------------------------
+Roots for System of Eqn A*x*y=1, exp(-x)+exp(-y)=1+1/A, A=10000:
+---------------------------------------------------------------------
+
+Initial Vector x (Starting Point for line search)
+:
+    0.000 
+    1.000 
+
+f_(System_of_Eqn)(x):
+
+   -1.000 
+    0.368 
+---------------------------------------------------------------------
+For Normal Linesearch:
+---------------------------------------------------------------------
+
+1. Column = Number of steps. 2.Column = number of function calls:
+
+   32.000 
+   92.000 
+
+solution x_root:
+
+    0.000 
+    9.091 
+
+f(x_root):
+
+   -0.000 
+    0.000 
+---------------------------------------------------------------------
+For Normal Linesearch with Analytic Jacobian:
+---------------------------------------------------------------------
+
+1. Column = Number of steps. 2.Column = number of function calls:
+
+   16.000 
+   44.000 
+
+solution x_root:
+
+    0.000 
+    9.091 
+
+f(x_root):
+
+   -0.000 
+    0.000 
+---------------------------------------------------------------------
+For Normal Linesearch with Analytic Jacobian and Refined Line Search:
+---------------------------------------------------------------------
+
+1. Column = Number of steps. 2.Column = number of function calls:
+
+   10.000 
+   10.000 
+
+solution x_root:
+
+    0.000 
+    9.097 
+
+f(x_root):
+
+   -0.000 
+    0.000 
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Roots for Rosenbrock's Function (1-x)^2+100(y-x^2)^2:
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Initial Vector x (Starting Point for line search):
+
+   -2.000 
+   -2.000 
+
+f_(Rosenbrock)(x):
+
+-4806.000 
+-1200.000 
+---------------------------------------------------------------------
+For Normal Linesearch:
+---------------------------------------------------------------------
+
+1. Column = Number of steps. 2.Column = number of function calls:
+
+  406.000 
+ 1985.000 
+
+solution x_root:
+
+    1.000 
+    1.000 
+
+f(x_root):
+
+    0.000 
+   -0.000 
+---------------------------------------------------------------------
+For Normal Linesearch with Analytic Jacobian:
+---------------------------------------------------------------------
+
+1. Column = Number of steps. 2.Column = number of function calls:
+
+  203.000 
+ 1376.000 
+
+solution x_root:
+
+    1.000 
+    1.000 
+
+f(x_root):
+
+    0.000 
+   -0.000 
+---------------------------------------------------------------------
+For Normal Linesearch with Analytic Jacobian and Refined Line Search:
+---------------------------------------------------------------------
+
+1. Column = Number of steps. 2.Column = number of function calls:
+
+    5.000 
+    5.000 
+
+solution x_root:
+
+    1.000 
+    1.000 
+
+f(x_root):
+
+   -0.000 
+    0.000 
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Roots for Himmelblau's Function (x^2+y-11)^2+(x+y^2-7)^2:
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Initial Vector x (Starting Point for line search):
+
+    0.000 
+    0.000 
+
+f_(Himmelblau)(x):
+
+  -14.000 
+  -22.000 
+---------------------------------------------------------------------
+For Normal Linesearch:
+---------------------------------------------------------------------
+
+1. Column = Number of steps. 2.Column = number of function calls:
+
+    6.000 
+   15.000 
+
+solution x_root:
+
+   -0.271 
+   -0.923 
+
+f(x_root):
+
+    0.000 
+   -0.000 
+---------------------------------------------------------------------
+For Normal Linesearch with Analytic Jacobian:
+---------------------------------------------------------------------
+
+1. Column = Number of steps. 2.Column = number of function calls:
+
+    3.000 
+    6.000 
+
+solution x_root:
+
+   -0.271 
+   -0.923 
+
+f(x_root):
+
+    0.000 
+   -0.000 
+---------------------------------------------------------------------
+For Normal Linesearch with Analytic Jacobian and Refined Line Search:
+---------------------------------------------------------------------
+
+1. Column = Number of steps. 2.Column = number of function calls:
+
+    3.000 
+    3.000 
+
+solution x_root:
+
+   -0.271 
+   -0.923 
+
+f(x_root):
+
+    0.000 
+   -0.000 
